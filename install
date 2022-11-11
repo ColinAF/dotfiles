@@ -1,0 +1,15 @@
+#!/usr/bin/bash 
+
+FILES=(testdot)
+
+
+for file in $FILES
+do
+	echo "Symlinking $file"
+
+	ln -s ${PWD}/$file ~/.$file
+
+done 
+
+
+
