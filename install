@@ -1,12 +1,12 @@
 #!/usr/bin/bash 
 
-FILES=(testdot)
+FILES="vimrc bashrc"
 
 
 for file in $FILES
 do
 	echo "Symlinking $file"
-
+	rm ~/.$file
 	ln -s ${PWD}/$file ~/.$file
 
 done 
