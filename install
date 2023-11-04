@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FILES="vimrc bashrc tmux.conf"
+FILES="vimrc bashrc tmux.conf xinitrc"
 
 
 for file in $FILES
