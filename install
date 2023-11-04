@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# make symlinks of my dotfiles and put them in $HOME
 FILES="vimrc bashrc tmux.conf xinitrc"
 
 
@@ -11,5 +12,6 @@ do
 
 done 
 
-
+# Make an xprofile for when not using startx
+cp ~/.xinitrc ~/.xprofile
 
