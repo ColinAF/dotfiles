@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 # make symlinks of my dotfiles and put them in $HOME
-FILES="vimrc bashrc tmux.conf"
-
+FILES="vimrc bashrc bash_profile tmux.conf zshrc gitconfig Xresources"
 
 for file in $FILES
 do
