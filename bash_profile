@@ -3,15 +3,11 @@
 # Export TERM
 export TERM=xterm-256color
 
-# Add paths to PATH
-export PATH="~/utils/scripts:$PATH"
+# Export a scripts dir 
+export SCRIPTS="$HOME/scripts"
 
-# Source the EPICS config file written by Mike
-# It does a lot of stuff and should be refactored for my usage
-# Note: This is particularly for 3.15.5-1.1
-if [ -f ~/utils/scripts/epicsSetup_3.15.5-1.1 ]; then
-     . ~/utils/scripts/epicsSetup_3.15.5-1.1 
-fi
+# Add paths to PATH
+export PATH="$SCRIPTS:$PATH"
 
 # Source the .bashrc if it exists
 if [ -f ~/.bashrc ]; then
