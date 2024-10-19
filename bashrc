@@ -9,6 +9,9 @@ bind -r "C-h"
 # Make with a reasonable ammount of jobs 
 export MAKEFLAGS="-j$(nproc)"
 
+# Override Shell Prompt
+export PS1="\[\033[38;5;129m\]\u@\h[\W\[$(tput sgr0)\]\[\033[38;5;63m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\[\033[38;5;129m\]]->\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
 # General Aliases 
 alias less="less -R" # Always retain colors in less
 alias gt="grep -Irn --color=always" # 'grep text' no bin files, recursive, line nums
