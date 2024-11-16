@@ -8,8 +8,8 @@ picom &
 # Set the desktop background 
 feh --bg-fill ~/Downloads/mountian.jpg
 
+exec dwm_statusbar.sh &
+
 # Run the window manager 
 exec dwm
 
-# Remap caps to escape
-setxkbmap -option caps:swapescape
