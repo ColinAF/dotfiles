@@ -7,15 +7,21 @@ set nocompatible " Ignore vi compatibility
 set number     " Adds line numbers
 set relativenumber " Make numbers relative to current line
 set cursorline " Highlight current line
-set smartindent " Better code indents
 
 set tabstop=4
 set shiftwidth=4	
-set foldmethod=syntax
 
 " Add filename to statusbar 
 set laststatus=2
 set statusline=%f "tail of the filename
+
+" Move lines around with vim bindings
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Finding Files
 " Search down into subfolders
@@ -28,6 +34,32 @@ command! Tag !ctags -f .tags -R *
 
 " Auto generate tags file on file write of *.c and *.h files
  autocmd BufWritePost *.c,*.h silent! !ctags -f .tags -R * &
+
+" Undo settings 
+set undofile
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+
+" Backup locations
+set backup                          " enable backups
+set swapfile                        " enable swaps
+set undodir=$HOME/.vim/tmp/undo     " undo files
+set backupdir=$HOME/.vim/tmp/backup " backups
+set directory=$HOME/.vim/tmp/swap   " swap files
+
+" Make those folders automatically if they don't already exist.
+if !isdirectory(expand(&undodir))
+	call mkdir(expand(&undodir), "p")
+endif
+
+if !isdirectory(expand(&backupdir))
+	call mkdir(expand(&backupdir), "p")
+endif
+
+if !isdirectory(expand(&directory))
+	call mkdir(expand(&directory), "p")
+endif
+
 
 " ctl-] jump to tag
 " g ctl-] ambigious tags
