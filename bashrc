@@ -21,6 +21,7 @@ alias lt="ls -lth" # List files by most recent update
 alias ff="find -name" # Find a file by name
 alias fd="find -type d -name" # Find a directory by name
 alias python="python3" # Always use python3
+alias vim="nvim"
 
 # Edm Aliases 
 alias diag="edm -x diagnostics.edl &"
