@@ -12,8 +12,8 @@ do
 done 
 
 # Link nvim config manually 
-echo "Symlinking init.vim"
-rm ~/.config/nvim/init.vim
-ln -s ${PWD}/init.vim ~/.config/nvim/init.vim
+echo "Symlinking init.lua"
+rm ~/.config/nvim/init.lua
+ln -s ${PWD}/init.lua ~/.config/nvim/init.lua
 
 
