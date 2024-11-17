@@ -5,6 +5,9 @@ A repo to sync my dotfiles across machines.
 * vim
 * bash 
 * tmux 
+* zsh
+* git 
+* etc...
 
 ## Usage
 ```
