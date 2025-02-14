@@ -11,8 +11,8 @@ export PS1="\[\033[38;5;129m\]\u@\h[\W\[$(tput sgr0)\]\[\033[38;5;63m\]\$(git br
 
 # Source the EPICS Environ vars
 # Note: This is particularly for 3.15.5-1.1
-if [ -f /afs/slac/g/spear/epicsSetup_3.15.5-1.1.bash ]; then
-     . /afs/slac/g/spear/epicsSetup_3.15.5-1.1.bash 
+if [ -f /afs/slac/g/spear/epics/epicsSetup_3.15.5-1.1.bash ]; then
+     . /afs/slac/g/spear/epics/epicsSetup_3.15.5-1.1.bash 
 fi
 
 # Source the .bashrc if it exists
