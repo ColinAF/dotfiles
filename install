@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # make symlinks of my dotfiles and put them in $HOME
-FILES="vimrc bashrc bash_profile tmux.conf zshrc gitconfig Xresources xinitrc"
+FILES="vimrc bashrc bash_profile tmux.conf zshrc gitconfig"
 
 for file in $FILES
 do
@@ -12,8 +12,8 @@ do
 done 
 
 # Link nvim config manually 
-echo "Symlinking init.lua"
-rm ~/.config/nvim/init.lua
-ln -s ${PWD}/init.lua ~/.config/nvim/init.lua
+echo "Symlinking nvim config"
+rm -rf ~/.config/nvim
+ln -s ${PWD}/nvim ~/.config/nvim
 
 

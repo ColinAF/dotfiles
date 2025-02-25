@@ -8,9 +8,6 @@ set number     " Adds line numbers
 set relativenumber " Make numbers relative to current line
 set cursorline " Highlight current line
 
-set tabstop=4
-set shiftwidth=4	
-
 " Add filename to statusbar 
 set laststatus=2
 set statusline=%f "tail of the filename
