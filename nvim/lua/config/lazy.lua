@@ -24,6 +24,7 @@ require("lazy").setup({
 	spec = {
 		require('plugins.catppuccin'),
 		require('plugins.barbar'),
+		require('plugins.blink'),
 		require('plugins.treesitter'),
 		require('plugins.render-markdown'),
 		require('plugins.avante'),
