@@ -23,6 +23,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	spec = {
 		require('plugins.catppuccin'),
+		require('plugins.render-markdown'),
+		require('plugins.avante'),
 	},
 
 	-- Configure any other settings here. See the documentation for more details.
