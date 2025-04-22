@@ -3,11 +3,10 @@ A repo to sync my dotfiles across machines.
 
 ## Configs for:
 * vim
+* neovim
 * bash 
 * tmux 
-* zsh
 * git 
-* etc...
 
 ## Usage
 ```
