@@ -9,3 +9,5 @@
 [user]
 	name = Colin Frisch
 	email = cafrisch98@gmail.com
+[init]
+	defaultBranch = main
