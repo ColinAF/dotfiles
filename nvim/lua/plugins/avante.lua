@@ -8,6 +8,7 @@ return {
     provider = "ollama",
     ollama = {
 	    model = "codellama",
+	    model = "phi4",
     }, 
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
