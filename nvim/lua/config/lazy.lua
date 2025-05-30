@@ -28,6 +28,7 @@ require("lazy").setup({
 		require('plugins.treesitter'),
 		require('plugins.render-markdown'),
 		require('plugins.avante'),
+		require('plugins.neo-tree'),
 	},
 
 	-- Configure any other settings here. See the documentation for more details.
