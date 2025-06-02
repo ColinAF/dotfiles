@@ -29,6 +29,7 @@ require("lazy").setup({
 		require('plugins.render-markdown'),
 		require('plugins.avante'),
 		require('plugins.neo-tree'),
+		require('plugins.telescope'),
 	},
 
 	-- Configure any other settings here. See the documentation for more details.
