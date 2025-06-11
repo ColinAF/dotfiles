@@ -22,3 +22,13 @@ alias python="python3" # Always use python3
 # Edm Aliases 
 alias diag="edm -x diagnostics.edl &"
 alias cpus="edm -x cpu_diags.edl &"
+
+
+epswitch() 
+{
+  local sel
+  sel="$(python3 ../scripts/epSwitch.py)"
+  [[ -n $sel ]] && source "$sel"
+}
+
+
