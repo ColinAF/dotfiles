@@ -10,10 +10,13 @@ set cursorline " Highlight current line
 
 set tabstop=4
 set shiftwidth=4	
+set smartindent
+set colorcolumn=80
 
 " Add filename to statusbar 
 set laststatus=2
 set statusline=%f "tail of the filename
+
 
 " Move lines around with vim bindings
 nnoremap <A-j> :m .+1<CR>==
