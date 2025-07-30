@@ -20,3 +20,14 @@ alias fd="find -type d -name" # Find a directory by name
 
 # Edm Aliases 
 alias diag="edm -x diagnostics.edl &"
+alias cpus="edm -x cpu_diags.edl &"
+
+
+epswitch() 
+{
+  local sel
+  sel="$(python3 ../scripts/epSwitch.py)"
+  [[ -n $sel ]] && source "$sel"
+}
+
+
