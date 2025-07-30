@@ -27,7 +27,7 @@ alias cpus="edm -x cpu_diags.edl &"
 epswitch() 
 {
   local sel
-  sel="$(python3 ../scripts/epSwitch.py)"
+  sel="$(python3 /sdf/home/c/cafrisch/utils/scripts/epSwitch.py)"
   [[ -n $sel ]] && source "$sel"
 }
 
