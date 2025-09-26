@@ -17,6 +17,7 @@ alias ll="ls -lah" # List all files
 alias lt="ls -lth" # List files by most recent update 
 alias ff="find -name" # Find a file by name
 alias fd="find -type d -name" # Find a directory by name
+alias xterm='xterm -bg black -fg white -fa Monospace -fs 14' # Theme xterm
 
 # Edm Aliases 
 alias diag="edm -x diagnostics.edl &"
