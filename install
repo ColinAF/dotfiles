@@ -16,4 +16,6 @@ echo "Symlinking nvim config"
 rm -rf ~/.config/nvim
 ln -s ${PWD}/nvim ~/.config/nvim
 
-
+echo "Symlinking emacs config"
+rm -rf ~/.emacs.d/*
+ln -s ${PWD}/init.el ~/.emacs.d/init.el
