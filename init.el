@@ -19,6 +19,23 @@
 
 (load-theme 'wombat)
 
+;; Start Eglot for C/C++
+(add-hook 'c-mode-hook #'eglot-ensure)
+(add-hook 'c++-mode-hook #'eglot-ensure)
+
+;; Tell Eglot to use clangd (usually automatic, but explicit is nice)
+(with-eval-after-load 'eglot
+  (add-to-list 'eglot-server-programs
+               '((c-mode c++-mode) . ("clangd"))))
+
+;; Nicer Eglot Settings
+(with-eval-after-load 'eglot
+  (add-to-list 'eglot-server-programs
+               '((c-mode c++-mode) . ("clangd"
+                                      "--background-index"
+                                      "--clang-tidy"
+                                      "--completion-style=detailed"))))
+
 ;; Set up package.el to work with MELPA
 (require 'package)
 (add-to-list 'package-archives
@@ -34,3 +51,5 @@
 ;; Enable Evil
 (require 'evil)
 (evil-mode 1)
+
+
