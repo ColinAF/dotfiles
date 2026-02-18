@@ -30,6 +30,7 @@ require("lazy").setup({
 		require('plugins.avante'),
 		require('plugins.neo-tree'),
 		require('plugins.telescope'),
+		require('plugins.remote-nvim'),
 	},
 
 	-- Configure any other settings here. See the documentation for more details.

@@ -5,7 +5,9 @@ let mapleader = " "
 
 "color elflord  " colorscheme 
 filetype on    " Filetype detection 
+
 syntax on      " Turn on syntax highlighting
+filetype indent on
 set nocompatible " Ignore vi compatibility
 
 set hidden " Allow buffer switch without saving
@@ -18,6 +20,12 @@ set cursorline " Highlight current line
 " Add filename to statusbar 
 set laststatus=2
 set statusline=%f "tail of the filename
+
+" Tab Setting
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 " Search down into subfolders
 set path+=** " Provides tab-completion for all file-related tasks
